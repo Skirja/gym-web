@@ -1,0 +1,497 @@
+    body {
+        margin: 0;
+        padding: 0;
+    
+    }
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 0;
+        box-sizing: border-box;
+    }
+
+    /* HEADER */
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+    }
+
+    .header-container {
+        margin-left: auto;
+        margin-right: auto;
+        margin: 0;
+        padding: 0 70px;
+    }
+
+    /* CSS Untuk ukuran layar handphone (< 768px) */
+    @media only screen and (max-width: 767px) {
+        .header-container {
+            margin-left: auto;
+            margin-right: auto;
+            margin: 0;
+            padding: 0 25px;
+        }
+    }
+
+    .logo {
+        width: 105px;
+    }
+
+    .button-header {
+        display: inline-block;
+        padding: 10px 30px;
+        border-radius: 10px;
+        text-decoration: none;
+        color: #000;
+        background-color: #fff;
+        font-family: Corbel;
+        font-size: 14px;
+        font-weight: 550;
+        margin-top: -40px;
+    }
+
+    .button-header:hover {
+        background-color: #262626;
+        color: #fff;
+    }
+
+    /* HEADER END */
+
+    /* ISI 1 */
+
+    .carousel {
+        position: relative;
+        width: 100%;
+        height: 720px;
+        overflow: hidden;
+    }
+
+    .carousel-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+        transition: opacity 1s;
+        filter: brightness(0.7);
+    }
+
+    .carousel-image.active {
+        opacity: 1;
+    }
+
+    .content-1 {
+        position: absolute;
+        top: 250px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        width: 100%;
+    }
+
+    /* CSS Untuk ukuran layar handphone (< 768px) */
+    @media only screen and (max-width: 767px) {
+        .content-1 {
+            position: absolute;
+            top: 170px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    .judul-content1 {
+        color: #FFF;
+        text-align: center;
+        font-family: Impact;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        letter-spacing: 6.4px;
+        margin: 10px;
+    }
+
+    .sub-judul-content1 {
+        color: #FFF;
+        text-align: center;
+        font-family: Corbel;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 100%;
+        opacity: 0.8;
+        margin: 10px auto;
+        width: 50%;
+    }
+
+    /* CSS Untuk ukuran layar handphone (< 768px) */
+    @media only screen and (max-width: 767px) {
+        .sub-judul-content1 {
+            color: #FFF;
+            text-align: center;
+            font-family: Corbel;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 100%;
+            opacity: 0.8;
+            margin: 10px auto;
+            width: 80%;
+        }
+    }
+
+    /* CSS Untuk ukuran layar tablet (>= 768px dan < 1024px) */
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        .sub-judul-content1 {
+            color: #FFF;
+            text-align: center;
+            font-family: Corbel;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 100%;
+            opacity: 0.8;
+            margin: 10px auto;
+            width: 80%;
+        }
+    }
+
+    .sub-judul-content1 span {
+        font-style: italic;
+        font-weight: 700;
+    }
+
+    .button-link-content1 {
+        background-color: #ffffff;
+        border-radius: 10px;
+        text-decoration: none;
+        color: #000000;
+        padding: 15px 65px;
+        display: inline-block;
+        font-family: Gill Sans MT;
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 20px;
+        border: none;
+    }
+
+    .button-link-content1:hover {
+        background-color: #262626;
+        color: #fff;
+    }
+
+    /* ISI 1 END */
+
+    /* ISI 2 */
+
+    .content-2 {
+        text-align: center;
+        background-color: #262626;
+        padding: 30px 0;
+    }
+
+    .judul-content2 {
+        color: #FFF;
+        font-family: Gill Sans MT;
+        font-size: 27px;
+        border: #FFF 3px solid;
+        border-radius: 13px;
+        display: inline-block;
+        padding: 18px 45px;
+        margin: 25px;
+        box-shadow: -11px 16px 11px 1px rgba(0,0,0,0.76);
+        -webkit-box-shadow: -11px 16px 11px 1px rgba(0,0,0,0.76);
+        -moz-box-shadow: -11px 16px 11px 1px rgba(0,0,0,0.76);
+    }
+
+    .judul-content2 span {
+        font-size: 18px;
+        opacity: 0.7;
+    }
+
+    .card-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        margin: 0 30px;
+    }
+
+    /* CSS Untuk ukuran layar handphone (< 768px) */
+    @media only screen and (max-width: 767px) {
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+
+    /* CSS Untuk ukuran layar tablet (>= 768px dan < 1025px) */
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+
+    @media only screen and (width: 1180px) 
+    {
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-4 {
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        padding: 20px;
+        transition: all 0.3s ease;
+        color: #FFF;
+    }
+
+    .card-1:hover,
+    .card-2:hover,
+    .card-3:hover,
+    .card-4:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-1 {
+        background-image: url(img/bnr1.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .card-2 {
+        background-image: url(img/bnr2.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .card-3 {
+        background-image: url(img/bnr3.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .card-4 {
+        background-image: url(img/bnr4.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .card-title {
+        font-family: Gill Sans MT;
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        -webkit-text-stroke: 1px #000000;
+    }
+
+    .card-description {
+        font-family: Corbel;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 1.5;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        color: #F00;
+        font-weight: 700;
+        font-size: 35px;
+        -webkit-text-stroke: 1px #000000;
+    }
+
+    .card-button {
+        padding: 10px 20px;
+        border-radius: 10px;
+        text-decoration: none;
+        color: #000;
+        background-color: #fff;
+        font-family: Corbel;
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: -40px;
+        border: none;
+    }
+
+    .card-button:hover {
+        background-color: #262626;
+        color: #fff;
+        border: none;
+    }
+
+    /* ISI 2 END */
+
+    /* ISI 3 */
+
+    .content-3 {
+        background-color: #000;
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    .judul-content3 {
+        color: #FFF;
+        font-family: Gill Sans MT;
+        font-size: 27px;
+        border: #FFF 3px solid;
+        border-radius: 13px;
+        display: inline-block;
+        padding: 18px 45px;
+        margin: 25px;
+    }
+
+    .maps {
+        display: block;
+        margin: 0 auto;
+        width: 600px; 
+        height: 450px;
+    }
+
+    /* CSS Untuk ukuran layar handphone (< 768px) */
+    @media only screen and (max-width: 767px) {
+        .maps {
+            display: block;
+            margin: 0 auto;
+            width: 300px; 
+            height: 275px;
+        }
+    }
+
+    .content3-description {
+        color: #fff;
+        font-family: corbel;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .content3-description span {
+        opacity: 80%;
+        color: #F00;
+        font-size: 16px;
+    }
+
+    /* ISI 3 END */
+
+    /* ISI 4 */
+
+    .content-4 {
+        background-color: #262626;
+        text-align: left;
+        padding: 40px 70px;
+    }
+
+    .judul-content4 {
+        color: #fff;
+        font-family: corbel;
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 40px;
+        margin-top: 10px;
+    }
+
+    form {
+        display: block;
+        max-width: 700px;
+    }
+
+    .form {
+        margin-bottom: 23px;
+    }
+
+    label {
+        font-weight: bold;
+        font-size: 18px;
+        color: #fff;
+        font-family: corbel;
+    }
+
+    input[type="text"],
+    input[type="tel"] {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%;
+        margin-top: 7px;
+    }
+
+    select {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f9f9f9;
+    }
+
+    select:focus {
+        border: 2px solid #555;
+    }
+
+    option {
+        font-size: 16px;
+    }
+
+    .button-content4 {
+        color: #000;
+        background-color: #fff;
+        padding: 10px 40px;
+        border-radius: 10px;
+        font-size: 16px;
+        font-family: corbel;
+        font-weight: 600;
+        margin-top: 10px;
+        margin-bottom: 25px;
+        border: none;
+    }
+
+    .button-content4:hover {
+        color: #fff;
+        background-color: #000;
+        border: none;
+    }
+
+    /* ISI 4 END */
+
+    /* FOOTER */
+
+    footer {
+        background-color: #000;
+        color: #ababab;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        padding: 35px 0;
+        text-align: center;
+    }
+    
+    .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+
+    }
+
+    /* FOOTER END */
